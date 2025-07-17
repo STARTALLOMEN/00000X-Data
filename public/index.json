@@ -1,0 +1,106 @@
+[
+{
+	"uri": "//localhost:1313/",
+	"title": "Serverless Data Lake Framework Jump Start",
+	"tags": [],
+	"description": "",
+	"content": "Serverless Data Lake Framework Jump Start Tổng quan Workshop này hướng dẫn người học cách triển khai các dịch vụ serverless của AWS để xây dựng kiến trúc data lake hiện đại trên nền tảng AWS, đảm bảo khả năng mở rộng linh hoạt và sẵn sàng cho tương lai.\nServerless Data Lake Framework (SDLF) là một bộ công cụ bao gồm các thành phần infrastructure có thể tái sử dụng, được thiết kế để tăng tốc việc triển khai hệ thống data lake doanh nghiệp trên AWS, giúp giảm thời gian triển khai vào production từ nhiều tháng xuống chỉ còn vài tuần. SDLF tuân thủ các nguyên tắc của AWS Well-Architected Framework và mang lại nhiều lợi ích khác cho doanh nghiệp, như được mô tả chi tiết trong tài liệu.\nLayer Mô tả storage Các layer lưu trữ data lake với S3 và Lake Formation catalog Glue data catalog (databases và crawlers) processing Lambda functions và Glue jobs được trigger bởi EventBridge để xử lý dữ liệu consumption Athena workgroups để query và sử dụng dữ liệu orchestration Step Functions và EventBridge để điều phối các workflow xử lý governance and security Lake Formation, KMS Keys, và IAM Roles cho quản trị và bảo mật Mục tiêu Mục tiêu của chúng ta là minh họa cách dữ liệu thô có thể được lưu trữ, phân loại, chuyển đổi (sử dụng các phương pháp transformation nhẹ và/hoặc nặng), và được sử dụng bởi các ứng dụng cũng như end users.\nWorkshop này sử dụng dataset được tải xuống từ đây. Dataset chứa thông tin định dạng JSON về các nhà lập pháp Hoa Kỳ và các vị trí họ đã nắm giữ trong Hạ viện và Thượng viện Hoa Kỳ, và đã được chỉnh sửa nhẹ và cung cấp trong GitHub repository cho mục đích của workshop này.\nTrong workshop này, sử dụng SDLF, chúng ta sẽ chuẩn hóa và xử lý dữ liệu bằng các phương pháp transformation nhẹ và nặng, và cuối cùng làm cho dữ liệu có thể query được bởi end users thông qua Amazon Athena.\nWorkshop Content: Prerequisites Deploy SDLF Foundations Setup CI/CD Pipeline Register Team and Dataset Deploy ETL Pipeline Data Ingestion and Processing Query Data with Athena Monitoring and Troubleshooting "
+},
+{
+	"uri": "//localhost:1313/3-cicd-pipeline/1-create-repositories/",
+	"title": "3.1 Tạo CodeCommit Repositories",
+	"tags": [],
+	"description": "",
+	"content": "Tạo CodeCommit Repositories Trong bước này, bạn sẽ tạo các CodeCommit repositories để lưu trữ mã nguồn cho SDLF components.\n1. Truy cập CodeCommit Đăng nhập AWS Console Tìm kiếm CodeCommit trong thanh tìm kiếm dịch vụ Click CodeCommit 2. Tạo repository đầu tiên Click Create repository Nhập Repository name: sdlf-workshop-foundations Nhập Description: SDLF Foundations infrastructure code Click Create repository 3. Tạo repository thứ hai Click Create repository (lần nữa) Nhập Repository name: sdlf-workshop-pipelines Nhập Description: SDLF Pipeline configurations Click Create repository 4. Tạo repository thứ ba Click Create repository Nhập Repository name: sdlf-workshop-teams Nhập Description: SDLF Team and dataset configurations Click Create repository 5. Kiểm tra repositories đã tạo Trong danh sách repositories, xác nhận có 3 repositories: sdlf-workshop-foundations sdlf-workshop-pipelines sdlf-workshop-teams 6. Chuẩn bị cho bước tiếp theo Ghi lại tên các repositories Chuẩn bị code để push vào repositories Đảm bảo có quyền truy cập repositories Lưu ý:\nRepository names phải unique trong region Có thể thêm tags để quản lý Xóa repositories khi không còn sử dụng "
+},
+{
+	"uri": "//localhost:1313/3-cicd-pipeline/2-configure-codebuild/",
+	"title": "3.2 Cấu hình CodeBuild Projects",
+	"tags": [],
+	"description": "",
+	"content": "Cấu hình CodeBuild Projects Trong bước này, bạn sẽ tạo các CodeBuild projects để build và test code từ CodeCommit repositories.\n1. Truy cập CodeBuild Đăng nhập AWS Console Tìm kiếm CodeBuild trong thanh tìm kiếm dịch vụ Click CodeBuild 2. Tạo Build Project đầu tiên Click Create build project Nhập Project name: sdlf-workshop-foundations-build Nhập Description: Build project for SDLF foundations 3. Cấu hình Source Ở mục Source, chọn: Source provider: AWS CodeCommit Repository: sdlf-workshop-foundations Branch: main Click Next 4. Cấu hình Environment Ở mục Environment: Environment image: Managed image Operating system: Ubuntu Runtime: Standard Image: aws/codebuild/standard:5.0 Service role: Create a service role in your account Click Next 5. Cấu hình Buildspec Ở mục Buildspec: Chọn Use a buildspec file Buildspec name: buildspec.yml Click Next 6. Cấu hình Artifacts Ở mục Artifacts: Type: Amazon S3 Bucket name: Chọn bucket artifacts từ SDLF foundations Name: foundations-artifacts Click Next 7. Tạo Project Kiểm tra lại cấu hình Click Create build project 8. Tạo Build Project thứ hai Click Create build project (lần nữa) Nhập Project name: sdlf-workshop-pipelines-build Lặp lại các bước 3-7 với repository sdlf-workshop-pipelines 9. Tạo Build Project thứ ba Click Create build project Nhập Project name: sdlf-workshop-teams-build Lặp lại các bước 3-7 với repository sdlf-workshop-teams 10. Kiểm tra Build Projects Trong danh sách projects, xác nhận có 3 projects: sdlf-workshop-foundations-build sdlf-workshop-pipelines-build sdlf-workshop-teams-build 11. Test Build Project Chọn một project Click Start build Kiểm tra build logs để đảm bảo hoạt động đúng Lưu ý:\nĐảm bảo S3 bucket artifacts có quyền truy cập Service role cần có quyền truy cập S3, CloudWatch Logs Buildspec file sẽ được tạo trong repository "
+},
+{
+	"uri": "//localhost:1313/3-cicd-pipeline/",
+	"title": "Set up CI/CD Pipeline",
+	"tags": [],
+	"description": "",
+	"content": "Set up CI/CD Pipeline Overview In this module, we will set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline for SDLF. This pipeline automates the deployment and management of your data lake components, ensuring consistent and reliable deployments across environments.\nThe SDLF CI/CD pipeline includes:\nSource Control: CodeCommit repositories for version control Build Process: CodeBuild projects for compilation and testing Deployment Pipeline: CodePipeline for automated deployments Artifact Management: S3 buckets for storing build artifacts Notifications: SNS topics for deployment status updates Objectives After completing this module, you will have:\nCodeCommit repositories for SDLF components CodeBuild projects configured for each component CodePipeline orchestrating the deployment process Automated testing and validation steps Notification system for deployment status Contents Create CodeCommit Repositories Configure CodeBuild Projects Set up CodePipeline Test CI/CD Pipeline Estimated Time 25-35 minutes\nPrerequisites SDLF Foundations successfully deployed AWS CLI configured with appropriate permissions Git client installed and configured "
+},
+{
+	"uri": "//localhost:1313/3-cicd-pipeline/3-setup-codepipeline/",
+	"title": "3.3 Thiết lập CodePipeline",
+	"tags": [],
+	"description": "",
+	"content": "Thiết lập CodePipeline Trong bước này, bạn sẽ tạo CodePipeline để tự động hóa quy trình build và deploy.\n1. Truy cập CodePipeline Đăng nhập AWS Console Tìm kiếm CodePipeline trong thanh tìm kiếm dịch vụ Click CodePipeline 2. Tạo Pipeline đầu tiên Click Create pipeline Nhập Pipeline name: sdlf-workshop-foundations-pipeline Click Next 3. Cấu hình Source stage Ở mục Source: Source provider: AWS CodeCommit Repository name: sdlf-workshop-foundations Branch name: main Change detection options: CloudWatch Events Click Next 4. Cấu hình Build stage Ở mục Build: Build provider: AWS CodeBuild Region: Chọn region hiện tại Project name: sdlf-workshop-foundations-build Click Next 5. Cấu hình Deploy stage Ở mục Deploy: Deploy provider: AWS CloudFormation Region: Chọn region hiện tại Action mode: Create or update a stack Stack name: sdlf-workshop-foundations-stack Template file: template.yml Parameter file: parameters.json Click Next 6. Cấu hình Service role Ở mục Service role: Chọn Create a service role Role name: sdlf-workshop-pipeline-role Click Next 7. Tạo Pipeline Kiểm tra lại cấu hình Click Create pipeline 8. Tạo Pipeline thứ hai Click Create pipeline (lần nữa) Nhập Pipeline name: sdlf-workshop-pipelines-pipeline Lặp lại các bước 3-7 với repository và build project tương ứng 9. Tạo Pipeline thứ ba Click Create pipeline Nhập Pipeline name: sdlf-workshop-teams-pipeline Lặp lại các bước 3-7 với repository và build project tương ứng 10. Kiểm tra Pipelines Trong danh sách pipelines, xác nhận có 3 pipelines: sdlf-workshop-foundations-pipeline sdlf-workshop-pipelines-pipeline sdlf-workshop-teams-pipeline 11. Test Pipeline Chọn một pipeline Click Release change để trigger pipeline Theo dõi tiến trình qua các stages Lưu ý:\nĐảm bảo CloudFormation templates có sẵn trong repository Service role cần có quyền truy cập đầy đủ Pipeline sẽ tự động trigger khi có code changes "
+},
+{
+	"uri": "//localhost:1313/3-cicd-pipeline/4-test-pipeline/",
+	"title": "3.4 Test Pipeline",
+	"tags": [],
+	"description": "",
+	"content": "Test CI/CD Pipeline Trong bước này, bạn sẽ test pipeline để đảm bảo quy trình CI/CD hoạt động đúng.\n1. Truy cập CodePipeline Đăng nhập AWS Console Tìm kiếm CodePipeline trong thanh tìm kiếm dịch vụ Click CodePipeline 2. Chọn Pipeline để test Chọn pipeline sdlf-workshop-foundations-pipeline Kiểm tra trạng thái hiện tại 3. Trigger Pipeline manually Click Release change Xác nhận trigger pipeline Theo dõi tiến trình 4. Theo dõi Source stage Kiểm tra Source stage chuyển sang màu xanh Xác nhận code được lấy từ repository Kiểm tra commit message và author 5. Theo dõi Build stage Kiểm tra Build stage bắt đầu Click vào build để xem logs Đảm bảo build thành công 6. Theo dõi Deploy stage Kiểm tra Deploy stage bắt đầu Theo dõi CloudFormation stack creation Đảm bảo deployment thành công 7. Kiểm tra kết quả Vào CloudFormation Console Kiểm tra stack được tạo/update Xác nhận resources được tạo đúng 8. Test Pipeline thứ hai Chọn pipeline sdlf-workshop-pipelines-pipeline Lặp lại các bước 3-7 9. Test Pipeline thứ ba Chọn pipeline sdlf-workshop-teams-pipeline Lặp lại các bước 3-7 10. Kiểm tra logs và troubleshooting Nếu pipeline failed, click vào stage để xem logs Kiểm tra error messages Sửa lỗi và trigger lại 11. Xác minh automation Push code changes vào repository Kiểm tra pipeline tự động trigger Xác nhận end-to-end automation Lưu ý:\nPipeline sẽ tự động trigger khi có code changes Kiểm tra CloudWatch logs nếu có lỗi Đảm bảo service roles có đủ quyền "
+},
+{
+	"uri": "//localhost:1313/1-prerequisite/",
+	"title": "Prerequisites",
+	"tags": [],
+	"description": "",
+	"content": "SDLF Architecture Overview Serverless Data Lake Framework (SDLF) is a serverless architecture solution for building data lakes on AWS. In this workshop, we will deploy SDLF with the following key components:\nKey Components: AWS Account: AWS account with full access permissions SDLF Foundations: Basic infrastructure for data lake CI/CD Pipeline: Automated deployment pipeline Team and Dataset: Team and dataset configuration ETL Pipeline: Data processing and transformation pipeline Data Ingestion: Data ingestion process Athena Query: Data querying Monitoring: System monitoring System Requirements: AWS account with AdministratorAccess permissions Modern web browser (Chrome, Firefox, Safari, Edge) Stable internet connection Basic knowledge of AWS services Estimated Time: Total time: 4-6 hours Each section: 30-45 minutes Make sure you are logged into AWS Console and have selected an appropriate region (recommended: us-east-1 or ap-southeast-1) before starting.\n"
+},
+{
+	"uri": "//localhost:1313/2-foundations/",
+	"title": "Deploy SDLF Foundations",
+	"tags": [],
+	"description": "",
+	"content": "SDLF Foundations Overview SDLF Foundations is the basic infrastructure required to deploy Serverless Data Lake Framework. This section will set up the core components of the data lake.\nFoundations Architecture Key Components: S3 Buckets: Store raw, processed, and curated data Glue Data Catalog: Manage metadata and schema Lake Formation: Manage data access permissions IAM Roles: Permissions for services KMS Keys: Data encryption CloudWatch: Monitoring and logging Deployment Process: Download SDLF: Clone repository and configure Configure Parameters: Set up required parameters Deploy CloudFormation: Create infrastructure Verify Deployment: Check created components Estimated Time: 45-60 minutes Make sure you have completed the Prerequisites section before starting this section.\n"
+},
+{
+	"uri": "//localhost:1313/4-team-dataset/",
+	"title": "Register Team and Dataset",
+	"tags": [],
+	"description": "",
+	"content": "Team and Dataset Overview In this section, we will register teams and datasets in SDLF to set up data structure and access permissions.\nTeam and Dataset Architecture Key Components: Team Registration: Register working teams Dataset Creation: Create datasets Permission Configuration: Configure access permissions Data Catalog Setup: Set up data catalog Deployment Process: Register Team: Create team with access permissions Create Dataset: Set up data structure Configure Permissions: Set access permissions Verify Setup: Check configuration Estimated Time: 30-45 minutes Make sure you have completed the CI/CD Pipeline section before starting this section.\n"
+},
+{
+	"uri": "//localhost:1313/5-etl-pipeline/",
+	"title": "Deploy ETL Pipeline",
+	"tags": [],
+	"description": "",
+	"content": "ETL Pipeline Overview ETL Pipeline is the data processing and transformation component in SDLF. This pipeline will use AWS Glue to extract, transform and load data.\nETL Pipeline Architecture Key Components: Glue Jobs: Process and transform data Step Functions: Orchestrate workflow EventBridge: Trigger events S3 Buckets: Store raw, processed, curated data Glue Data Catalog: Metadata management Deployment Process: Create Glue Jobs: Set up data processing jobs Configure Step Functions: Create workflow orchestration Setup EventBridge: Configure triggers Test Pipeline: Check operation Estimated Time: 60-90 minutes Make sure you have completed the Team and Dataset section before starting this section.\n"
+},
+{
+	"uri": "//localhost:1313/6-data-ingestion/",
+	"title": "Data Ingestion and Processing",
+	"tags": [],
+	"description": "",
+	"content": "Data Ingestion Overview Data Ingestion is the process of loading data into the data lake and initial processing. This section will use AWS services to ingest and process data.\nData Ingestion Architecture Key Components: S3 Buckets: Store raw data Lambda Functions: Process data in real-time Glue Crawlers: Discover schema EventBridge: Trigger ingestion events CloudWatch: Monitor ingestion Deployment Process: Upload Data: Load data into S3 Process Data: Process data with Lambda Crawl Data: Discover schema with Glue Monitor Process: Monitor with CloudWatch Estimated Time: 45-60 minutes Make sure you have completed the ETL Pipeline section before starting this section.\n"
+},
+{
+	"uri": "//localhost:1313/7-athena-query/",
+	"title": "Query Data with Athena",
+	"tags": [],
+	"description": "",
+	"content": "Athena Query Overview Amazon Athena allows you to query data in S3 using SQL without managing infrastructure. This section will use Athena to query processed data.\nAthena Query Architecture Key Components: Athena Query Editor: SQL query interface Workgroups: Manage queries and costs Data Catalog: Metadata for queries S3 Storage: Data being queried Query Results: Query results Deployment Process: Create Workgroup: Set up workgroup for queries Configure Permissions: Set access permissions Write Queries: Create SQL queries Analyze Results: Analyze query results Estimated Time: 30-45 minutes Make sure you have completed the Data Ingestion section before starting this section.\n"
+},
+{
+	"uri": "//localhost:1313/8-monitoring/",
+	"title": "Monitoring and Troubleshooting",
+	"tags": [],
+	"description": "",
+	"content": "Monitoring Overview Monitoring is an important component for monitoring data lake operations and troubleshooting issues. This section will use AWS CloudWatch and other monitoring services.\nMonitoring Architecture Key Components: CloudWatch: Monitor metrics and logs CloudWatch Alarms: Issue alerts CloudWatch Dashboards: Monitoring dashboards CloudTrail: Audit logs X-Ray: Distributed tracing Deployment Process: Setup CloudWatch: Configure monitoring Create Alarms: Set up alerts Create Dashboards: Build dashboards Test Monitoring: Test the system Estimated Time: 30-45 minutes Make sure you have completed the Athena Query section before starting this section.\n"
+},
+{
+	"uri": "//localhost:1313/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
