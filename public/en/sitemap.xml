@@ -2,197 +2,184 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/3-cicd-pipeline/1-create-repositories/</loc>
+    <loc>/3-cicd-pipeline/1-create-repositories/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-cicd-pipeline/1-create-repositories/"
+                href="/vi/3-cicd-pipeline/1-create-repositories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-cicd-pipeline/1-create-repositories/"
+                href="/3-cicd-pipeline/1-create-repositories/"
                 />
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/3-cicd-pipeline/2-configure-codebuild/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/"
+                href="/vi/3-cicd-pipeline/2-configure-codebuild/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/"
+                href="/3-cicd-pipeline/2-configure-codebuild/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-cicd-pipeline/2-configure-codebuild/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-cicd-pipeline/2-configure-codebuild/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-cicd-pipeline/2-configure-codebuild/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-cicd-pipeline/</loc>
+    <loc>/3-cicd-pipeline/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-cicd-pipeline/"
+                href="/vi/3-cicd-pipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-cicd-pipeline/"
+                href="/3-cicd-pipeline/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-cicd-pipeline/3-setup-codepipeline/</loc>
+    <loc>/3-cicd-pipeline/3-setup-codepipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-cicd-pipeline/3-setup-codepipeline/"
+                href="/vi/3-cicd-pipeline/3-setup-codepipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-cicd-pipeline/3-setup-codepipeline/"
+                href="/3-cicd-pipeline/3-setup-codepipeline/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-cicd-pipeline/4-test-pipeline/</loc>
+    <loc>/3-cicd-pipeline/4-test-pipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-cicd-pipeline/4-test-pipeline/"
+                href="/vi/3-cicd-pipeline/4-test-pipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-cicd-pipeline/4-test-pipeline/"
+                href="/3-cicd-pipeline/4-test-pipeline/"
                 />
   </url><url>
-    <loc>//localhost:1313/1-prerequisite/</loc>
+    <loc>/1-prerequisite/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-prerequisite/"
+                href="/vi/1-prerequisite/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-prerequisite/"
+                href="/1-prerequisite/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-foundations/</loc>
+    <loc>/2-foundations/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-foundations/"
+                href="/vi/2-foundations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-foundations/"
+                href="/2-foundations/"
                 />
   </url><url>
-    <loc>//localhost:1313/4-team-dataset/</loc>
+    <loc>/4-team-dataset/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/4-team-dataset/"
+                href="/vi/4-team-dataset/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/4-team-dataset/"
+                href="/4-team-dataset/"
                 />
   </url><url>
-    <loc>//localhost:1313/5-etl-pipeline/</loc>
+    <loc>/5-etl-pipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/5-etl-pipeline/"
+                href="/vi/5-etl-pipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/5-etl-pipeline/"
+                href="/5-etl-pipeline/"
                 />
   </url><url>
-    <loc>//localhost:1313/6-data-ingestion/</loc>
+    <loc>/6-data-ingestion/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/6-data-ingestion/"
+                href="/vi/6-data-ingestion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/6-data-ingestion/"
+                href="/6-data-ingestion/"
                 />
   </url><url>
-    <loc>//localhost:1313/7-athena-query/</loc>
+    <loc>/7-athena-query/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/7-athena-query/"
+                href="/vi/7-athena-query/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/7-athena-query/"
+                href="/7-athena-query/"
                 />
   </url><url>
-    <loc>//localhost:1313/8-monitoring/</loc>
+    <loc>/8-monitoring/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/8-monitoring/"
+                href="/vi/8-monitoring/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/8-monitoring/"
+                href="/8-monitoring/"
                 />
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/categories/"
+                href="/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/categories/"
+                href="/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/tags/"
+                href="/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/tags/"
+                href="/tags/"
                 />
   </url>
 </urlset>
