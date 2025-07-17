@@ -1,53 +1,37 @@
-# Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-learn"
+baseURL = "https://yourusername.github.io/sdlf-workshop/"
+languageCode = "en-us"
+title = "Serverless Data Lake Framework Workshop"
+theme = "learn"
 
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-  # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "workshop"
-  # Git hub repo link
-  editURL = ""
-  description = ""
-  author = "journeyoftheaverageguy@gmail.com"
+  # Change default color scheme with a variant one.
+  themeVariant = "aws"
+  # Show visited links
   showVisitedLinks = true
-  disableBreadcrumb = false
+  # Hide Next/Prev buttons
   disableNextPrev = false
-  
+  # Display breadcrumbs
+  disableBreadcrumb = false
+  # Hide search box
+  disableSearch = false
+  # Order sections in menu by "weight" or "title"
+  ordersectionsby = "weight"
+  # Change default color scheme with a variant one
+  # Possible values: red, blue, green, gold, aws
+  themeVariant = "aws"
+
+# Multi-language setup
 [Languages]
 [Languages.en]
-title = "Deploy ShareNote Application on Auto Scaling Group"
+title = "Serverless Data Lake Framework Workshop"
 weight = 1
 languageName = "English"
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
-identifier = "AWS Study Group"
-url = "http://awsstudygroup.com"
-weight = 20
-
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group - FB Group"
-identifier = "AWS Study Group FB"
-url = "https://www.facebook.com/groups/660548818043427/"
-weight = 20
-
 [Languages.vi]
-title = "Triển khai Ứng dụng ShareNote với Auto Scaling Group"
+title = "Workshop Serverless Data Lake Framework"
 weight = 2
 languageName = "Tiếng Việt"
-
-[[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
-identifier = "AWS Study Group"
-url = "http://awsstudygroup.com"
-weight = 20
-
-[[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
-identifier = "AWS Study Group FB"
-url = "https://www.facebook.com/groups/660548818043427/"
-weight = 20
-
