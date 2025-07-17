@@ -2,250 +2,250 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/vi/6-data-ingestion/1-prepare-data/</loc>
+    <loc>//localhost:1313/vi/6-data-ingestion/1-prepare-data/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/2-foundations/1-clone-repository/</loc>
+    <loc>//localhost:1313/vi/2-foundations/1-clone-repository/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/4-team-dataset/1-register-team/</loc>
+    <loc>//localhost:1313/vi/4-team-dataset/1-register-team/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/1-prerequisite/1-aws-console/</loc>
+    <loc>//localhost:1313/vi/1-prerequisite/1-aws-console/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/</loc>
+    <loc>//localhost:1313/vi/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/3-cicd-pipeline/1-create-repositories/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/3-cicd-pipeline/1-create-repositories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/3-cicd-pipeline/1-create-repositories/"
-                />
-  </url><url>
-    <loc>/vi/5-etl-pipeline/1-create-glue-jobs/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/vi/7-athena-query/1-setup-workgroup/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/vi/3-cicd-pipeline/2-configure-codebuild/</loc>
+    <loc>//localhost:1313/vi/3-cicd-pipeline/1-create-repositories/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-cicd-pipeline/2-configure-codebuild/"
+                href="//localhost:1313/3-cicd-pipeline/1-create-repositories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-cicd-pipeline/2-configure-codebuild/"
+                href="//localhost:1313/vi/3-cicd-pipeline/1-create-repositories/"
                 />
   </url><url>
-    <loc>/vi/2-foundations/2-configure-parameters/</loc>
+    <loc>//localhost:1313/vi/5-etl-pipeline/1-create-glue-jobs/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/1-prerequisite/2-cloudshell/</loc>
+    <loc>//localhost:1313/vi/7-athena-query/1-setup-workgroup/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/4-team-dataset/2-create-dataset/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/vi/7-athena-query/2-create-crawler/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/vi/5-etl-pipeline/2-setup-step-functions/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/vi/6-data-ingestion/2-upload-data/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/vi/5-etl-pipeline/3-configure-eventbridge/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/vi/1-prerequisite/3-region-selection/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/vi/3-cicd-pipeline/3-setup-codepipeline/</loc>
+    <loc>//localhost:1313/vi/3-cicd-pipeline/2-configure-codebuild/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-cicd-pipeline/3-setup-codepipeline/"
+                href="//localhost:1313/3-cicd-pipeline/2-configure-codebuild/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-cicd-pipeline/3-setup-codepipeline/"
+                href="//localhost:1313/vi/3-cicd-pipeline/2-configure-codebuild/"
                 />
   </url><url>
-    <loc>/vi/4-team-dataset/3-configure-permissions/</loc>
+    <loc>//localhost:1313/vi/2-foundations/2-configure-parameters/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/7-athena-query/3-run-queries/</loc>
+    <loc>//localhost:1313/vi/1-prerequisite/2-cloudshell/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/2-foundations/3-deploy-cloudformation/</loc>
+    <loc>//localhost:1313/vi/4-team-dataset/2-create-dataset/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/2-foundations/4-verify-deployment/</loc>
+    <loc>//localhost:1313/vi/7-athena-query/2-create-crawler/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/3-cicd-pipeline/4-test-pipeline/</loc>
+    <loc>//localhost:1313/vi/5-etl-pipeline/2-setup-step-functions/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/6-data-ingestion/2-upload-data/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/5-etl-pipeline/3-configure-eventbridge/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/1-prerequisite/3-region-selection/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/3-cicd-pipeline/3-setup-codepipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-cicd-pipeline/4-test-pipeline/"
+                href="//localhost:1313/3-cicd-pipeline/3-setup-codepipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-cicd-pipeline/4-test-pipeline/"
+                href="//localhost:1313/vi/3-cicd-pipeline/3-setup-codepipeline/"
                 />
   </url><url>
-    <loc>/vi/7-athena-query/4-create-views/</loc>
+    <loc>//localhost:1313/vi/4-team-dataset/3-configure-permissions/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/7-athena-query/5-export-results/</loc>
+    <loc>//localhost:1313/vi/7-athena-query/3-run-queries/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/1-prerequisite/</loc>
+    <loc>//localhost:1313/vi/2-foundations/3-deploy-cloudformation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/1-prerequisite/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/1-prerequisite/"
-                />
   </url><url>
-    <loc>/vi/2-foundations/</loc>
+    <loc>//localhost:1313/vi/2-foundations/4-verify-deployment/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/3-cicd-pipeline/4-test-pipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-foundations/"
+                href="//localhost:1313/3-cicd-pipeline/4-test-pipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-foundations/"
+                href="//localhost:1313/vi/3-cicd-pipeline/4-test-pipeline/"
                 />
   </url><url>
-    <loc>/vi/3-cicd-pipeline/</loc>
+    <loc>//localhost:1313/vi/7-athena-query/4-create-views/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/7-athena-query/5-export-results/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/1-prerequisite/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-cicd-pipeline/"
+                href="//localhost:1313/1-prerequisite/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-cicd-pipeline/"
+                href="//localhost:1313/vi/1-prerequisite/"
                 />
   </url><url>
-    <loc>/vi/4-team-dataset/</loc>
+    <loc>//localhost:1313/vi/2-foundations/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-team-dataset/"
+                href="//localhost:1313/2-foundations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-team-dataset/"
+                href="//localhost:1313/vi/2-foundations/"
                 />
   </url><url>
-    <loc>/vi/5-etl-pipeline/</loc>
+    <loc>//localhost:1313/vi/3-cicd-pipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-etl-pipeline/"
+                href="//localhost:1313/3-cicd-pipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-etl-pipeline/"
+                href="//localhost:1313/vi/3-cicd-pipeline/"
                 />
   </url><url>
-    <loc>/vi/6-data-ingestion/</loc>
+    <loc>//localhost:1313/vi/4-team-dataset/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-data-ingestion/"
+                href="//localhost:1313/4-team-dataset/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-data-ingestion/"
+                href="//localhost:1313/vi/4-team-dataset/"
                 />
   </url><url>
-    <loc>/vi/7-athena-query/</loc>
+    <loc>//localhost:1313/vi/5-etl-pipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-athena-query/"
+                href="//localhost:1313/5-etl-pipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-athena-query/"
+                href="//localhost:1313/vi/5-etl-pipeline/"
                 />
   </url><url>
-    <loc>/vi/8-monitoring/</loc>
+    <loc>//localhost:1313/vi/6-data-ingestion/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/8-monitoring/"
+                href="//localhost:1313/6-data-ingestion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/8-monitoring/"
+                href="//localhost:1313/vi/6-data-ingestion/"
                 />
   </url><url>
-    <loc>/vi/9-cleanup/</loc>
+    <loc>//localhost:1313/vi/7-athena-query/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7-athena-query/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7-athena-query/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/8-monitoring/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/8-monitoring/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/8-monitoring/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/9-cleanup/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/vi/categories/</loc>
+    <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="//localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="//localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>/vi/tags/</loc>
+    <loc>//localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="//localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>

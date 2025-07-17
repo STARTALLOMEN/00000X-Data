@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cấu hình EventBridge on Serverless Data Lake Jump Start</title>
-    <link>/vi/5-etl-pipeline/3-configure-eventbridge/</link>
+    <link>//localhost:1313/vi/5-etl-pipeline/3-configure-eventbridge/</link>
     <description>Recent content in Cấu hình EventBridge on Serverless Data Lake Jump Start</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/vi/5-etl-pipeline/3-configure-eventbridge/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/vi/5-etl-pipeline/3-configure-eventbridge/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
