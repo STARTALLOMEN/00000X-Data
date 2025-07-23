@@ -1,0 +1,74 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="SDLF AWS Architecture">
+    <!-- User -->
+    <mxCell id="1" value="User" style="shape=mxgraph.aws4.user;" vertex="1" parent="1">
+      <mxGeometry x="20" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- AWS Console -->
+    <mxCell id="2" value="AWS Console" style="shape=mxgraph.aws4.management_console;" vertex="1" parent="1">
+      <mxGeometry x="100" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- CloudShell -->
+    <mxCell id="3" value="CloudShell" style="shape=mxgraph.aws4.cloudshell;" vertex="1" parent="1">
+      <mxGeometry x="180" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- CodeCommit -->
+    <mxCell id="4" value="CodeCommit" style="shape=mxgraph.aws4.codecommit;" vertex="1" parent="1">
+      <mxGeometry x="300" y="60" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- CodeBuild -->
+    <mxCell id="5" value="CodeBuild" style="shape=mxgraph.aws4.codebuild;" vertex="1" parent="1">
+      <mxGeometry x="380" y="60" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- CodePipeline -->
+    <mxCell id="6" value="CodePipeline" style="shape=mxgraph.aws4.codepipeline;" vertex="1" parent="1">
+      <mxGeometry x="460" y="60" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- IAM -->
+    <mxCell id="7" value="IAM" style="shape=mxgraph.aws4.iam;" vertex="1" parent="1">
+      <mxGeometry x="540" y="60" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- S3 Raw -->
+    <mxCell id="8" value="S3 Raw" style="shape=mxgraph.aws4.s3;" vertex="1" parent="1">
+      <mxGeometry x="300" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Lambda -->
+    <mxCell id="9" value="Lambda" style="shape=mxgraph.aws4.lambda;" vertex="1" parent="1">
+      <mxGeometry x="380" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- EventBridge -->
+    <mxCell id="10" value="EventBridge" style="shape=mxgraph.aws4.eventbridge;" vertex="1" parent="1">
+      <mxGeometry x="460" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Step Functions -->
+    <mxCell id="11" value="Step Functions" style="shape=mxgraph.aws4.step_functions;" vertex="1" parent="1">
+      <mxGeometry x="540" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Glue -->
+    <mxCell id="12" value="Glue" style="shape=mxgraph.aws4.glue;" vertex="1" parent="1">
+      <mxGeometry x="620" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- S3 Processed -->
+    <mxCell id="13" value="S3 Processed" style="shape=mxgraph.aws4.s3;" vertex="1" parent="1">
+      <mxGeometry x="700" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Athena -->
+    <mxCell id="14" value="Athena" style="shape=mxgraph.aws4.athena;" vertex="1" parent="1">
+      <mxGeometry x="780" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- CloudWatch -->
+    <mxCell id="15" value="CloudWatch" style="shape=mxgraph.aws4.cloudwatch;" vertex="1" parent="1">
+      <mxGeometry x="860" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- CloudFormation -->
+    <mxCell id="16" value="CloudFormation" style="shape=mxgraph.aws4.cloudformation;" vertex="1" parent="1">
+      <mxGeometry x="940" y="200" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- S3 Results -->
+    <mxCell id="17" value="S3 Results" style="shape=mxgraph.aws4.s3;" vertex="1" parent="1">
+      <mxGeometry x="780" y="300" width="60" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Kết nối các thành phần chính (ví dụ, bạn có thể thêm các mxCell kiểu edge để thể hiện luồng dữ liệu) -->
+    <!-- ... (phần này sẽ được hoàn thiện khi mở file bằng diagrams.net) ... -->
+  </diagram>
+</mxfile> 

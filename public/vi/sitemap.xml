@@ -13,9 +13,29 @@
   </url><url>
     <loc>//localhost:1313/vi/1-prerequisite/1-aws-console/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-prerequisite/1-aws-console/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-prerequisite/1-aws-console/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/3-cicd-pipeline/1-create-repositories/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -54,6 +74,16 @@
   </url><url>
     <loc>//localhost:1313/vi/1-prerequisite/2-cloudshell/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-prerequisite/2-cloudshell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-prerequisite/2-cloudshell/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/4-team-dataset/2-create-dataset/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -72,6 +102,16 @@
   </url><url>
     <loc>//localhost:1313/vi/1-prerequisite/3-region-selection/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-prerequisite/3-region-selection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-prerequisite/3-region-selection/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/3-cicd-pipeline/3-setup-codepipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>

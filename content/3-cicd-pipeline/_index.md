@@ -1,48 +1,42 @@
-+++
-title = "Set up CI/CD Pipeline"
-date = 2025-01-01T00:00:00Z
-weight = 3
-chapter = true
-+++
-
-# Set up CI/CD Pipeline
+---
+title: "Set up CI/CD Pipeline"
+date: 2024-01-01
+weight: 30
+chapter: false
+pre: "<b>3. </b>"
+---
 
 ## Overview
 
-In this module, we will set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline for SDLF. This pipeline automates the deployment and management of your data lake components, ensuring consistent and reliable deployments across environments.
+The CI/CD Pipeline is an important component for automating the deployment and updates of SDLF. This pipeline will use AWS CodeCommit, CodeBuild, and CodePipeline.
 
-The SDLF CI/CD pipeline includes:
-- **Source Control**: CodeCommit repositories for version control
-- **Build Process**: CodeBuild projects for compilation and testing
-- **Deployment Pipeline**: CodePipeline for automated deployments
-- **Artifact Management**: S3 buckets for storing build artifacts
-- **Notifications**: SNS topics for deployment status updates
+[Official documentation on SDLF CI/CD](https://github.com/awslabs/aws-serverless-data-lake-framework/tree/master/sdlf-cicd)
 
-![SDLF CI/CD Architecture](/images/3/sdlf-cicd-architecture.png?width=90pc)
+![CI/CD Pipeline Architecture](../../../static/images/3/0.png?width=40pc)
 
-## Objectives
+## Key Components
 
-After completing this module, you will have:
-- CodeCommit repositories for SDLF components
-- CodeBuild projects configured for each component
-- CodePipeline orchestrating the deployment process
-- Automated testing and validation steps
-- Notification system for deployment status
+1. **CodeCommit**: Repository for storing source code
+2. **CodeBuild**: Build and test code
+3. **CodePipeline**: Orchestrate the CI/CD process
+4. **CloudFormation**: Deploy infrastructure
+5. **S3 Artifacts**: Store build artifacts
 
-## Contents
+## Implementation Steps
 
-1. [Create CodeCommit Repositories](1-create-repositories)
-2. [Configure CodeBuild Projects](2-configure-codebuild)
-3. [Set up CodePipeline](3-setup-codepipeline)
-4. [Test CI/CD Pipeline](4-test-pipeline)
+1. [Create CodeCommit repositories](1-create-repositories)
+2. [Configure CodeBuild](2-configure-codebuild)
+3. [Set up CodePipeline](3-setup-pipeline)
+4. [Test the pipeline](4-test-pipeline)
 
-## Estimated Time
-25-35 minutes
+{{% notice note %}}
+The CI/CD Pipeline will help automate the deployment of SDLF components whenever there are changes in the source code.
+{{% /notice %}}
 
-## Prerequisites
+{{% notice warning %}}
+Make sure you have completed the SDLF Foundations section before starting this part.
+{{% /notice %}}
 
-- SDLF Foundations successfully deployed
-- AWS CLI configured with appropriate permissions
-- Git client installed and configured
+## Next Step
 
-![CI/CD Pipeline Overview](/images/3/cicd-pipeline-overview.png?width=90pc)
+Next, we will [Create CodeCommit repositories](1-create-repositories) to store the SDLF source code.

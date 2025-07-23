@@ -6,32 +6,34 @@ chapter: false
 pre: "<b>1. </b>"
 ---
 
-## SDLF Architecture Overview
+## Overview
 
-Serverless Data Lake Framework (SDLF) is a serverless architecture solution for building data lakes on AWS. In this workshop, we will deploy SDLF with the following key components:
+Before starting the deployment of the Serverless Data Lake Framework (SDLF), we need to prepare the working environment on AWS. This section will guide you through logging into the AWS Management Console, opening AWS CloudShell, and selecting the appropriate region.
+
+[Official SDLF Documentation](https://github.com/awslabs/aws-serverless-data-lake-framework)
 
 ![SDLF Architecture](../../../static/images/1/0.png?width=40pc)
 
-### Key Components:
-- **AWS Account**: AWS account with full access permissions
-- **SDLF Foundations**: Basic infrastructure for data lake
-- **CI/CD Pipeline**: Automated deployment pipeline
-- **Team and Dataset**: Team and dataset configuration
-- **ETL Pipeline**: Data processing and transformation pipeline
-- **Data Ingestion**: Data ingestion process
-- **Athena Query**: Data querying
-- **Monitoring**: System monitoring
+## Requirements
 
-### System Requirements:
 - AWS account with AdministratorAccess permissions
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - Stable internet connection
-- Basic knowledge of AWS services
 
-### Estimated Time:
-- Total time: 4-6 hours
-- Each section: 30-45 minutes
+## Implementation Steps
+
+1. [Log in to AWS Management Console](1-aws-console)
+2. [Open AWS CloudShell](2-cloudshell)
+3. [Select the appropriate region](3-region-selection)
 
 {{% notice note %}}
-Make sure you are logged into AWS Console and have selected an appropriate region (recommended: us-east-1 or ap-southeast-1) before starting.
+This workshop is designed to be completed using AWS CloudShell, allowing you to avoid installing any tools on your personal computer.
 {{% /notice %}}
+
+{{% notice warning %}}
+Make sure you use the same region throughout the entire workshop to avoid compatibility issues and cross-region data transfer costs.
+{{% /notice %}}
+
+## Next Step
+
+Next, we will [Log in to AWS Management Console](1-aws-console) to begin the workshop.

@@ -6,30 +6,35 @@ chapter: false
 pre: "<b>4. </b>"
 ---
 
-## Team and Dataset Overview
+## Overview
 
-In this section, we will register teams and datasets in SDLF to set up data structure and access permissions.
+In this section, we will register a team and dataset in SDLF to establish data structure and access permissions.
 
-### Team and Dataset Architecture
+[Official documentation on SDLF Teams and Datasets](https://github.com/awslabs/aws-serverless-data-lake-framework/tree/master/sdlf-team)
 
-![Team Dataset Architecture](../../../static/images/4/0.png?width=40pc)
+![Team and Dataset Architecture](../../../static/images/4/0.png?width=40pc)
 
-### Key Components:
+## Key Components
 
-1. **Team Registration**: Register working teams
-2. **Dataset Creation**: Create datasets
-3. **Permission Configuration**: Configure access permissions
-4. **Data Catalog Setup**: Set up data catalog
+1. **Team**: Working group with specific access permissions
+2. **Dataset**: Data set managed by the team
+3. **Permissions**: Access rights to data
+4. **Data Catalog**: Metadata about the data
 
-### Deployment Process:
+## Implementation Steps
 
-1. **Register Team**: Create team with access permissions
-2. **Create Dataset**: Set up data structure
-3. **Configure Permissions**: Set access permissions
-4. **Verify Setup**: Check configuration
-
-### Estimated Time: 30-45 minutes
+1. [Register a team](1-register-team)
+2. [Create a dataset](2-create-dataset)
+3. [Set up access permissions](3-configure-permissions)
 
 {{% notice note %}}
-Make sure you have completed the CI/CD Pipeline section before starting this section.
-{{% /notice %}} 
+Registering teams and datasets is an important step to establish data structure and access permissions in SDLF.
+{{% /notice %}}
+
+{{% notice warning %}}
+Make sure you have completed the CI/CD Pipeline section before starting this part.
+{{% /notice %}}
+
+## Next Step
+
+Next, we will [Register a team](1-register-team) to begin setting up the data structure.
