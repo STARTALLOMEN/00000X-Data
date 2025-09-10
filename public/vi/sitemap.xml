@@ -4,12 +4,42 @@
   <url>
     <loc>//localhost:1313/vi/6-data-ingestion/1-prepare-data/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-data-ingestion/1-prepare-data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-data-ingestion/1-prepare-data/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/2-foundations/1-clone-repository/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-foundations/1-clone-repository/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-foundations/1-clone-repository/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/4-team-dataset/1-register-team/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-team-dataset/1-register-team/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-team-dataset/1-register-team/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/1-prerequisite/1-aws-console/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -52,6 +82,16 @@
   </url><url>
     <loc>//localhost:1313/vi/5-etl-pipeline/1-create-glue-jobs/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-etl-pipeline/1-create-glue-jobs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-etl-pipeline/1-create-glue-jobs/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/7-athena-query/1-setup-workgroup/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -71,6 +111,16 @@
   </url><url>
     <loc>//localhost:1313/vi/2-foundations/2-configure-parameters/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-foundations/2-configure-parameters/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-foundations/2-configure-parameters/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/1-prerequisite/2-cloudshell/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -87,18 +137,58 @@
   </url><url>
     <loc>//localhost:1313/vi/4-team-dataset/2-create-dataset/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-team-dataset/2-create-dataset/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-team-dataset/2-create-dataset/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/7-athena-query/2-create-crawler/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/vi/5-etl-pipeline/2-setup-step-functions/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-etl-pipeline/2-setup-step-functions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-etl-pipeline/2-setup-step-functions/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/6-data-ingestion/2-upload-data/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-data-ingestion/2-upload-data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-data-ingestion/2-upload-data/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/5-etl-pipeline/3-configure-eventbridge/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-etl-pipeline/3-configure-eventbridge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-etl-pipeline/3-configure-eventbridge/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/1-prerequisite/3-region-selection/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -128,15 +218,45 @@
   </url><url>
     <loc>//localhost:1313/vi/4-team-dataset/3-configure-permissions/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-team-dataset/3-configure-permissions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-team-dataset/3-configure-permissions/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/7-athena-query/3-run-queries/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/vi/2-foundations/3-deploy-cloudformation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-foundations/3-deploy-cloudformation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-foundations/3-deploy-cloudformation/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/2-foundations/4-verify-deployment/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-foundations/4-verify-deployment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-foundations/4-verify-deployment/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/3-cicd-pipeline/4-test-pipeline/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -263,6 +383,16 @@
   </url><url>
     <loc>//localhost:1313/vi/9-cleanup/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/9-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/9-cleanup/"
+                />
   </url><url>
     <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link

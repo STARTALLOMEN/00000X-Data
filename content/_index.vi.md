@@ -1,36 +1,40 @@
 ---
-title: "Serverless Data Lake Framework Jump Start"
+title: "Xây dựng Location Recommendation System"
 date: 2024-01-01
 weight: 1
 chapter: false
 ---
 
 
-# Serverless Data Lake Framework Jump Start
+# Xây dựng Location Recommendation System
 
 #### Tổng quan
 
-Workshop này hướng dẫn người học cách triển khai các dịch vụ serverless của AWS để xây dựng kiến trúc data lake hiện đại trên nền tảng AWS, đảm bảo khả năng mở rộng linh hoạt và sẵn sàng cho tương lai.
+Workshop này hướng dẫn người học cách triển khai Serverless Data Lake Framework (SDLF) để xây dựng Location Recommendation System sử dụng Yelp Dataset. Chúng ta sẽ sử dụng các dịch vụ serverless của AWS để tạo ra một nền tảng recommendation engine mạnh mẽ, có khả năng mở rộng và sẵn sàng cho production.
 
-Serverless Data Lake Framework (SDLF) là một bộ công cụ bao gồm các thành phần infrastructure có thể tái sử dụng, được thiết kế để tăng tốc việc triển khai hệ thống data lake doanh nghiệp trên AWS, giúp giảm thời gian triển khai vào production từ nhiều tháng xuống chỉ còn vài tuần. SDLF tuân thủ các nguyên tắc của AWS Well-Architected Framework và mang lại nhiều lợi ích khác cho doanh nghiệp, như được mô tả chi tiết trong [tài liệu](https://sdlf.readthedocs.io/en/latest/).
+Hệ thống này sử dụng Serverless Data Lake Framework (SDLF) - một bộ công cụ bao gồm các thành phần hạ tầng (infrastructure) có thể tái sử dụng, được thiết kế để tăng tốc việc triển khai recommendation system doanh nghiệp trên AWS. SDLF tuân thủ các nguyên tắc của AWS Well-Architected Framework và mang lại khả năng xử lý dữ liệu Yelp quy mô lớn một cách hiệu quả, như được mô tả chi tiết trong [tài liệu](https://sdlf.readthedocs.io/en/latest/).
 
 ![SDLF Architecture](/images/1/sdlf-layers-architecture.png?width=90pc)
 
-| Layer | Mô tả |
+| Layer | Mô tả cho Location Recommendation System |
 | --- | --- |
-| storage | Các layer lưu trữ data lake với S3 và Lake Formation |
-| catalog | Glue data catalog (databases và crawlers) |
-| processing | Lambda functions và Glue jobs được trigger bởi EventBridge để xử lý dữ liệu |
-| consumption | Athena workgroups để query và sử dụng dữ liệu |
-| orchestration | Step Functions và EventBridge để điều phối các workflow xử lý |
-| governance and security | Lake Formation, KMS Keys, và IAM Roles cho quản trị và bảo mật |
+| storage | Lưu trữ Yelp Dataset (business, review, user, tip, checkin) trong S3 với Lake Formation |
+| catalog | Glue data catalog quản lý schema của Yelp data và metadata cho recommendation engine |
+| processing | Lambda functions và Glue jobs xử lý Yelp data, tính toán recommendation scores và similarity metrics |
+| consumption | Athena workgroups để query business data và tạo recommendation APIs |
+| orchestration | Step Functions và EventBridge điều phối ETL workflow và recommendation pipeline |
+| governance and security | Lake Formation, KMS Keys, và IAM Roles bảo mật Yelp data và API access |
 
 #### Mục tiêu
-Mục tiêu của chúng ta là minh họa cách dữ liệu thô có thể được lưu trữ, phân loại, chuyển đổi (sử dụng các phương pháp transformation nhẹ và/hoặc nặng), và được sử dụng bởi các ứng dụng cũng như end users.
+Mục tiêu của workshop này là xây dựng Location Recommendation System sử dụng Yelp Open Dataset. Chúng ta sẽ minh họa cách dữ liệu Yelp (businesses, reviews, users, tips, check-ins) có thể được lưu trữ, phân loại, chuyển đổi và tạo ra các API recommendation mạnh mẽ cho việc tìm kiếm và gợi ý địa điểm.
 
-Workshop này sử dụng dataset được tải xuống từ [đây](https://github.com/aws-solutions-library-samples/data-lakes-on-aws/tree/main/sdlf-utils/workshop-examples/legislators/data). Dataset chứa thông tin định dạng JSON về các nhà lập pháp Hoa Kỳ và các vị trí họ đã nắm giữ trong Hạ viện và Thượng viện Hoa Kỳ, và đã được chỉnh sửa nhẹ và cung cấp trong GitHub repository cho mục đích của workshop này.
+Workshop này sử dụng Yelp Open Dataset bao gồm thông tin về hơn 150,000 doanh nghiệp, 6.9 triệu reviews, và 1.9 triệu users trong định dạng JSON. Dataset được tải xuống từ [Yelp Open Dataset](https://www.yelp.com/dataset) và đã được chuẩn bị sẵn cho mục đích của workshop này.
 
-Trong workshop này, sử dụng SDLF, chúng ta sẽ chuẩn hóa và xử lý dữ liệu bằng các phương pháp transformation nhẹ và nặng, và cuối cùng làm cho dữ liệu có thể query được bởi end users thông qua Amazon Athena.
+Sử dụng SDLF, chúng ta sẽ:
+- Xử lý và chuẩn hóa dữ liệu Yelp bằng ETL pipeline
+- Tạo recommendation algorithms dựa trên rating, location, và user preferences
+- Xây dựng APIs cho business search và location recommendations
+- Phát triển dashboard analytics cho business intelligence
 
 ## Các bước thực hiện
     
@@ -38,9 +42,8 @@ Trong workshop này, sử dụng SDLF, chúng ta sẽ chuẩn hóa và xử lý 
 2. [Triển khai SDLF Foundations](2-foundations)
 3. [Thiết lập CI/CD Pipeline](3-cicd-pipeline)
 4. [Đăng ký Team và Dataset](4-team-dataset)
-5. [Triển khai ETL Pipeline](5-etl-pipeline)
-6. [Nạp và xử lý dữ liệu](6-data-ingestion)
-7. [Truy vấn dữ liệu với Athena](7-athena-query)
+5. [Triển khai ETL Pipeline cho Yelp Data](5-etl-pipeline)
+6. [Nạp và xử lý dữ liệu Yelp](6-data-ingestion)
+7. [Xây dựng Recommendation APIs với Athena](7-athena-query)
 8. [Giám sát và xử lý sự cố](8-monitoring)
 9. [Dọn dẹp tài nguyên](9-cleanup)
-

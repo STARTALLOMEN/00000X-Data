@@ -1,5 +1,5 @@
 ---
-title: "Nạp và xử lý dữ liệu"
+title: "Nạp và xử lý dữ liệu Yelp"
 date: 2024-01-01
 weight: 60
 chapter: false
@@ -8,7 +8,7 @@ pre: "<b>6. </b>"
 
 ## Tổng quan
 
-Trong phần này, chúng ta sẽ nạp dữ liệu vào data lake và theo dõi quá trình xử lý thông qua ETL pipeline đã thiết lập. Đây là một phần quan trọng trong quy trình làm việc với data lake, nơi dữ liệu thô được đưa vào hệ thống và được xử lý qua nhiều giai đoạn để trở thành dữ liệu có giá trị cho phân tích.
+Trong phần này, chúng ta sẽ nạp Yelp Open Dataset vào data lake và theo dõi quá trình xử lý thông qua ETL pipeline. Chúng ta sẽ xử lý các file JSON của Yelp (business, review, user, tip, checkin) và chuyển đổi chúng thành định dạng tối ưu cho recommendation system.
 
 [Tài liệu chính thức về SDLF Data Ingestion](https://github.com/awslabs/aws-serverless-data-lake-framework/tree/master/sdlf-utils)
 
@@ -28,10 +28,10 @@ Khi dữ liệu được nạp vào data lake, quy trình xử lý sẽ diễn r
 ## Các bước thực hiện
 
 1. [Chuẩn bị dữ liệu mẫu](1-prepare-data) - Tạo dữ liệu JSON mẫu để nạp vào data lake
-2. [Upload dữ liệu](2-upload-data) - Đưa dữ liệu vào S3 và theo dõi quá trình xử lý
+2. [Tải lên dữ liệu](2-upload-data) - Đưa dữ liệu vào S3 và theo dõi quá trình xử lý
 
 {{% notice note %}}
-Khi dữ liệu được upload vào S3 bucket, EventBridge rule sẽ tự động kích hoạt ETL pipeline để xử lý dữ liệu. Bạn không cần phải thực hiện thêm bất kỳ hành động nào để bắt đầu quá trình xử lý.
+Khi dữ liệu được tải lên S3 bucket, EventBridge rule sẽ tự động kích hoạt ETL pipeline để xử lý dữ liệu. Bạn không cần phải thực hiện thêm bất kỳ hành động nào để bắt đầu quá trình xử lý.
 {{% /notice %}}
 
 {{% notice warning %}}

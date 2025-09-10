@@ -1,5 +1,5 @@
 ---
-title: "Triển khai ETL Pipeline"
+title: "Triển khai ETL Pipeline cho Yelp Data"
 date: 2024-01-01
 weight: 50
 chapter: false
@@ -8,7 +8,7 @@ pre: "<b>5. </b>"
 
 ## Tổng quan
 
-ETL Pipeline là thành phần xử lý và chuyển đổi dữ liệu trong SDLF. Pipeline này sẽ sử dụng AWS Glue để extract, transform và load dữ liệu.
+ETL Pipeline là thành phần xử lý và chuyển đổi dữ liệu Yelp trong Location Recommendation System. Pipeline này sẽ sử dụng AWS Glue để trích xuất (extract), chuyển đổi (transform) và nạp (load) dữ liệu Yelp Dataset, chuẩn bị cho các recommendation algorithms.
 
 [Tài liệu chính thức về SDLF ETL Pipeline](https://github.com/awslabs/aws-serverless-data-lake-framework/tree/master/sdlf-pipelines)
 
@@ -17,8 +17,8 @@ ETL Pipeline là thành phần xử lý và chuyển đổi dữ liệu trong SD
 ## Các thành phần chính
 
 1. **Glue Jobs**: Xử lý và chuyển đổi dữ liệu
-2. **Step Functions**: Orchestrate workflow
-3. **EventBridge**: Trigger events
+2. **Step Functions**: Điều phối quy trình
+3. **EventBridge**: Kích hoạt sự kiện
 4. **S3 Buckets**: Lưu trữ dữ liệu raw, stage, analytics
 5. **Glue Data Catalog**: Quản lý metadata
 

@@ -1,5 +1,5 @@
 ---
-title: "Deploy ETL Pipeline"
+title: "Deploy ETL Pipeline for Yelp Data"
 date: 2024-01-01
 weight: 50
 chapter: false
@@ -8,7 +8,7 @@ pre: "<b>5. </b>"
 
 ## ETL Pipeline Overview
 
-ETL Pipeline is the data processing and transformation component in SDLF. This pipeline will use AWS Glue to extract, transform and load data.
+ETL Pipeline is the Yelp data processing and transformation component in the Location Recommendation System. This pipeline will use AWS Glue to extract, transform and load Yelp Dataset, preparing it for recommendation algorithms.
 
 ### ETL Pipeline Architecture
 

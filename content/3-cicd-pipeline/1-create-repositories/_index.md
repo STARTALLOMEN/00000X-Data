@@ -1,62 +1,69 @@
 ---
-title: "3.1 Tạo CodeCommit Repositories"
+title: "Create CodeCommit Repositories"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: "<b>3.1 </b>"
 ---
 
-## Tạo CodeCommit Repositories
+## Create CodeCommit Repositories
 
-Trong bước này, bạn sẽ tạo các CodeCommit repositories để lưu trữ mã nguồn cho SDLF components.
+In this step, you will create CodeCommit repositories to store the source code for SDLF components.
 
-### 1. Truy cập CodeCommit
-1. Đăng nhập AWS Console
-2. Tìm kiếm **CodeCommit** trong thanh tìm kiếm dịch vụ
+### 1. Access CodeCommit
+
+1. Log in to the AWS Console
+2. Search for **CodeCommit** in the service search bar
 3. Click **CodeCommit**
 
-![Mở CodeCommit](../../../static/images/3/3.2_OpenCodeCommit.png?width=90pc)
+![Open CodeCommit](../../../static/images/3/3.2_OpenCodeCommit.png?width=90pc)
 
-### 2. Tạo repository đầu tiên
+### 2. Create the first repository
+
 1. Click **Create repository**
-2. Nhập **Repository name**: `sdlf-workshop-foundations`
-3. Nhập **Description**: `SDLF Foundations infrastructure code`
+2. Enter **Repository name**: `sdlf-workshop-foundations`
+3. Enter **Description**: `SDLF Foundations infrastructure code`
 4. Click **Create repository**
 
-![Tạo repository foundations](../../../static/images/3/3.3_CreateFoundationRepo.png?width=90pc)
+![Create foundations repository](../../../static/images/3/3.3_CreateFoundationRepo.png?width=90pc)
 
-### 3. Tạo repository thứ hai
-1. Click **Create repository** (lần nữa)
-2. Nhập **Repository name**: `sdlf-workshop-pipelines`
-3. Nhập **Description**: `SDLF Pipeline configurations`
+### 3. Create the second repository
+
+1. Click **Create repository** again
+2. Enter **Repository name**: `sdlf-workshop-pipelines`
+3. Enter **Description**: `SDLF Pipeline configurations`
 4. Click **Create repository**
 
-![Tạo repository pipelines](../../../static/images/3/3.4_CreatePipelineRepo.png?width=90pc)
+![Create pipelines repository](../../../static/images/3/3.4_CreatePipelineRepo.png?width=90pc)
 
-### 4. Tạo repository thứ ba
+### 4. Create the third repository
+
 1. Click **Create repository**
-2. Nhập **Repository name**: `sdlf-workshop-teams`
-3. Nhập **Description**: `SDLF Team and dataset configurations`
+2. Enter **Repository name**: `sdlf-workshop-teams`
+3. Enter **Description**: `SDLF Team and dataset configurations`
 4. Click **Create repository**
 
-![Tạo repository teams](../../../static/images/3/3.5_CreateTeamRepo.png?width=90pc)
+![Create teams repository](../../../static/images/3/3.5_CreateTeamRepo.png?width=90pc)
 
-### 5. Kiểm tra repositories đã tạo
-1. Trong danh sách repositories, xác nhận có 3 repositories:
+### 5. Verify created repositories
+
+1. In the repositories list, confirm that there are 3 repositories:
    - `sdlf-workshop-foundations`
    - `sdlf-workshop-pipelines`
    - `sdlf-workshop-teams`
 
-![Danh sách repositories](../../../static/images/3/3.6_RepositoryList.png?width=90pc)
+![Repositories list](../../../static/images/3/3.6_RepositoryList.png?width=90pc)
 
-### 6. Chuẩn bị cho bước tiếp theo
-- Ghi lại tên các repositories
-- Chuẩn bị code để push vào repositories
-- Đảm bảo có quyền truy cập repositories
+### 6. Prepare for the next step
+
+- Note down the repository names
+- Prepare code to push to the repositories
+- Ensure you have access permissions to the repositories
 
 {{% notice note %}}
-**Lưu ý**:
-- Repository names phải unique trong region
-- Có thể thêm tags để quản lý
-- Xóa repositories khi không còn sử dụng
+**Note**:
+
+- Repository names must be unique within the region
+- You can add tags for management
+- Delete repositories when no longer needed
 {{% /notice %}}

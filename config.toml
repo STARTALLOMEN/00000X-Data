@@ -10,7 +10,7 @@ home = [ "HTML", "RSS", "JSON"]
   themeVariant = "workshop"
   # Git hub repo link
   editURL = ""
-  description = ""
+  description = "Workshop hướng dẫn xây dựng Location Recommendation System sử dụng Yelp Dataset và AWS SDLF"
   author = "journeyoftheaverageguy@gmail.com"
   showVisitedLinks = true
   disableBreadcrumb = false
@@ -18,7 +18,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Serverless Data Lake Jump Start"
+title = "Building Location Recommendation System"
 weight = 1
 languageName = "English"
 
@@ -35,7 +35,7 @@ url = "https://www.facebook.com/groups/660548818043427/"
 weight = 20
 
 [Languages.vi]
-title = "Serverless Data Lake Jump Start"
+title = "Xây dựng Location Recommendation System"
 weight = 2
 languageName = "Tiếng Việt"
 

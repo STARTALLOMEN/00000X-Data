@@ -16,11 +16,11 @@ CI/CD Pipeline là thành phần quan trọng để tự động hóa việc tri
 
 ## Các thành phần chính
 
-1. **CodeCommit**: Repository lưu trữ mã nguồn
-2. **CodeBuild**: Build và test code
-3. **CodePipeline**: Orchestrate quy trình CI/CD
-4. **CloudFormation**: Deploy infrastructure
-5. **S3 Artifacts**: Lưu trữ build artifacts
+1. **CodeCommit**: Kho lưu trữ (repository) mã nguồn
+2. **CodeBuild**: Build và kiểm thử (test) mã nguồn
+3. **CodePipeline**: Điều phối quy trình CI/CD
+4. **CloudFormation**: Triển khai hạ tầng
+5. **S3 Artifacts**: Lưu trữ artifacts build
 
 ## Các bước thực hiện
 

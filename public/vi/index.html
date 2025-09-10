@@ -12,21 +12,21 @@
     <title>Serverless Data Lake Framework Jump Start :: Serverless Data Lake Jump Start</title>
 
     
-    <link href="/css/nucleus.css?1753243115" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1753243115" rel="stylesheet">
-    <link href="/css/hybrid.css?1753243115" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1753243115" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1753243115" rel="stylesheet">
-    <link href="/css/auto-complete.css?1753243115" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1753243115" rel="stylesheet">
-    <link href="/css/theme.css?1753243115" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1753243115" rel="stylesheet">
+    <link href="/css/nucleus.css?1756809191" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1756809191" rel="stylesheet">
+    <link href="/css/hybrid.css?1756809191" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1756809191" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1756809191" rel="stylesheet">
+    <link href="/css/auto-complete.css?1756809191" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1756809191" rel="stylesheet">
+    <link href="/css/theme.css?1756809191" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1756809191" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1753243115" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1756809191" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1753243115"></script>
+    <script src="/js/jquery-3.3.1.min.js?1756809191"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1753243115"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1753243115"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1756809191"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1756809191"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1753243115"></script>
+<script type="text/javascript" src="/js/search.js?1756809191"></script>
 
     
   </div>
@@ -1197,7 +1197,7 @@
 <h1 id="serverless-data-lake-framework-jump-start">Serverless Data Lake Framework Jump Start</h1>
 <h4 id="tổng-quan">Tổng quan</h4>
 <p>Workshop này hướng dẫn người học cách triển khai các dịch vụ serverless của AWS để xây dựng kiến trúc data lake hiện đại trên nền tảng AWS, đảm bảo khả năng mở rộng linh hoạt và sẵn sàng cho tương lai.</p>
-<p>Serverless Data Lake Framework (SDLF) là một bộ công cụ bao gồm các thành phần infrastructure có thể tái sử dụng, được thiết kế để tăng tốc việc triển khai hệ thống data lake doanh nghiệp trên AWS, giúp giảm thời gian triển khai vào production từ nhiều tháng xuống chỉ còn vài tuần. SDLF tuân thủ các nguyên tắc của AWS Well-Architected Framework và mang lại nhiều lợi ích khác cho doanh nghiệp, như được mô tả chi tiết trong <a href="https://sdlf.readthedocs.io/en/latest/">tài liệu</a>.</p>
+<p>Serverless Data Lake Framework (SDLF) là một bộ công cụ bao gồm các thành phần hạ tầng (infrastructure) có thể tái sử dụng, được thiết kế để tăng tốc việc triển khai hệ thống data lake doanh nghiệp trên AWS, giúp giảm thời gian triển khai vào production từ nhiều tháng xuống chỉ còn vài tuần. SDLF tuân thủ các nguyên tắc của AWS Well-Architected Framework và mang lại nhiều lợi ích khác cho doanh nghiệp, như được mô tả chi tiết trong <a href="https://sdlf.readthedocs.io/en/latest/">tài liệu</a>.</p>
 <p><img alt="SDLF Architecture" src="/images/1/sdlf-layers-architecture.png?width=90pc"></p>
 <table>
 <thead>
@@ -1217,7 +1217,7 @@
 </tr>
 <tr>
 <td>processing</td>
-<td>Lambda functions và Glue jobs được trigger bởi EventBridge để xử lý dữ liệu</td>
+<td>Lambda functions và Glue jobs được kích hoạt bởi EventBridge để xử lý dữ liệu</td>
 </tr>
 <tr>
 <td>consumption</td>
@@ -1234,9 +1234,9 @@
 </tbody>
 </table>
 <h4 id="mục-tiêu">Mục tiêu</h4>
-<p>Mục tiêu của chúng ta là minh họa cách dữ liệu thô có thể được lưu trữ, phân loại, chuyển đổi (sử dụng các phương pháp transformation nhẹ và/hoặc nặng), và được sử dụng bởi các ứng dụng cũng như end users.</p>
-<p>Workshop này sử dụng dataset được tải xuống từ <a href="https://github.com/aws-solutions-library-samples/data-lakes-on-aws/tree/main/sdlf-utils/workshop-examples/legislators/data">đây</a>. Dataset chứa thông tin định dạng JSON về các nhà lập pháp Hoa Kỳ và các vị trí họ đã nắm giữ trong Hạ viện và Thượng viện Hoa Kỳ, và đã được chỉnh sửa nhẹ và cung cấp trong GitHub repository cho mục đích của workshop này.</p>
-<p>Trong workshop này, sử dụng SDLF, chúng ta sẽ chuẩn hóa và xử lý dữ liệu bằng các phương pháp transformation nhẹ và nặng, và cuối cùng làm cho dữ liệu có thể query được bởi end users thông qua Amazon Athena.</p>
+<p>Mục tiêu của chúng ta là minh họa cách dữ liệu thô có thể được lưu trữ, phân loại, chuyển đổi (sử dụng các phương pháp transformation nhẹ và/hoặc nặng), và được sử dụng bởi các ứng dụng cũng như người dùng cuối (end users).</p>
+<p>Workshop này sử dụng dataset được tải xuống từ <a href="https://github.com/aws-solutions-library-samples/data-lakes-on-aws/tree/main/sdlf-utils/workshop-examples/legislators/data">đây</a>. Dataset chứa thông tin định dạng JSON về các nhà lập pháp Hoa Kỳ và các vị trí họ đã nắm giữ trong Hạ viện và Thượng viện Hoa Kỳ, và đã được chỉnh sửa nhẹ và cung cấp trong repository GitHub cho mục đích của workshop này.</p>
+<p>Trong workshop này, sử dụng SDLF, chúng ta sẽ chuẩn hóa và xử lý dữ liệu bằng các phương pháp transformation nhẹ và nặng, và cuối cùng làm cho dữ liệu có thể được truy vấn bởi người dùng cuối thông qua Amazon Athena.</p>
 <h2 id="các-bước-thực-hiện">Các bước thực hiện</h2>
 <ol>
 <li><a href="/vi/1-prerequisite/">Các bước chuẩn bị</a></li>
@@ -1842,19 +1842,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1753243115"></script>
-    <script src="/js/perfect-scrollbar.min.js?1753243115"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1753243115"></script>
-    <script src="/js/jquery.sticky.js?1753243115"></script>
-    <script src="/js/featherlight.min.js?1753243115"></script>
-    <script src="/js/highlight.pack.js?1753243115"></script>
+    <script src="/js/clipboard.min.js?1756809191"></script>
+    <script src="/js/perfect-scrollbar.min.js?1756809191"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1756809191"></script>
+    <script src="/js/jquery.sticky.js?1756809191"></script>
+    <script src="/js/featherlight.min.js?1756809191"></script>
+    <script src="/js/highlight.pack.js?1756809191"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1753243115"></script>
-    <script src="/js/learn.js?1753243115"></script>
-    <script src="/js/hugo-learn.js?1753243115"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1756809191"></script>
+    <script src="/js/learn.js?1756809191"></script>
+    <script src="/js/hugo-learn.js?1756809191"></script>
 
-    <link href="/mermaid/mermaid.css?1753243115" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1753243115"></script>
+    <link href="/mermaid/mermaid.css?1756809191" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1756809191"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,5 +1,5 @@
 ---
-title: "Query Data with Athena"
+title: "Build Recommendation APIs with Athena"
 date: 2024-01-01
 weight: 70
 chapter: false
@@ -8,7 +8,7 @@ pre: "<b>7. </b>"
 
 ## Athena Query Overview
 
-Amazon Athena allows you to query data in S3 using SQL without managing infrastructure. This section will use Athena to query processed data.
+In this section, we will use Amazon Athena to create recommendation algorithms and APIs for the Location Recommendation System. We will write complex SQL queries to analyze Yelp data and generate intelligent recommendations based on location, rating, category, and user preferences.
 
 ### Athena Query Architecture
 

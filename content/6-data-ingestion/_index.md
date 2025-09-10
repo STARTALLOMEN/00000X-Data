@@ -1,5 +1,5 @@
 ---
-title: "Data Ingestion and Processing"
+title: "Yelp Data Ingestion and Processing"
 date: 2024-01-01
 weight: 60
 chapter: false
@@ -8,7 +8,7 @@ pre: "<b>6. </b>"
 
 ## Data Ingestion Overview
 
-Data Ingestion is the process of loading data into the data lake and initial processing. This section will use AWS services to ingest and process data.
+In this section, we will ingest Yelp Open Dataset into the data lake and monitor the processing through the ETL pipeline. We will process Yelp JSON files (business, review, user, tip, checkin) and transform them into optimized formats for the recommendation system.
 
 ### Data Ingestion Architecture
 

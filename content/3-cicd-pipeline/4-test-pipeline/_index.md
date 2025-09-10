@@ -1,5 +1,5 @@
 ---
-title: "3.4 Test Pipeline"
+title: "Test Pipeline"
 date: 2024-01-01
 weight: 4
 chapter: false
@@ -8,79 +8,79 @@ pre: "<b>3.4 </b>"
 
 ## Test CI/CD Pipeline
 
-Trong bước này, bạn sẽ test pipeline để đảm bảo quy trình CI/CD hoạt động đúng.
+In this step, you will test the pipeline to ensure the CI/CD process works correctly.
 
-### 1. Truy cập CodePipeline
-1. Đăng nhập AWS Console
-2. Tìm kiếm **CodePipeline** trong thanh tìm kiếm dịch vụ
+### 1. Access CodePipeline
+1. Log in to the AWS Console
+2. Search for **CodePipeline** in the service search bar
 3. Click **CodePipeline**
 
-![Mở CodePipeline](../../../static/images/3/3.21_OpenCodePipeline.png?width=90pc)
+![Open CodePipeline](../../../static/images/3/3.21_OpenCodePipeline.png?width=90pc)
 
-### 2. Chọn Pipeline để test
-1. Chọn pipeline `sdlf-workshop-foundations-pipeline`
-2. Kiểm tra trạng thái hiện tại
+### 2. Select a pipeline to test
+1. Select the pipeline `sdlf-workshop-foundations-pipeline`
+2. Check the current status
 
-![Chọn Pipeline](../../../static/images/3/3.22_SelectPipeline.png?width=90pc)
+![Select Pipeline](../../../static/images/3/3.22_SelectPipeline.png?width=90pc)
 
-### 3. Trigger Pipeline manually
+### 3. Trigger the pipeline manually
 1. Click **Release change**
-2. Xác nhận trigger pipeline
-3. Theo dõi tiến trình
+2. Confirm to trigger the pipeline
+3. Monitor the progress
 
 ![Trigger Pipeline](../../../static/images/3/3.23_TriggerPipeline.png?width=90pc)
 
-### 4. Theo dõi Source stage
-1. Kiểm tra Source stage chuyển sang màu xanh
-2. Xác nhận code được lấy từ repository
-3. Kiểm tra commit message và author
+### 4. Monitor the Source stage
+1. Check that the Source stage turns green
+2. Confirm that code is pulled from the repository
+3. Check the commit message and author
 
 ![Source Stage](../../../static/images/3/3.24_SourceStage.png?width=90pc)
 
-### 5. Theo dõi Build stage
-1. Kiểm tra Build stage bắt đầu
-2. Click vào build để xem logs
-3. Đảm bảo build thành công
+### 5. Monitor the Build stage
+1. Check that the Build stage starts
+2. Click on the build to view logs
+3. Ensure the build is successful
 
 ![Build Stage](../../../static/images/3/3.25_BuildStage.png?width=90pc)
 
-### 6. Theo dõi Deploy stage
-1. Kiểm tra Deploy stage bắt đầu
-2. Theo dõi CloudFormation stack creation
-3. Đảm bảo deployment thành công
+### 6. Monitor the Deploy stage
+1. Check that the Deploy stage starts
+2. Monitor CloudFormation stack creation
+3. Ensure deployment is successful
 
 ![Deploy Stage](../../../static/images/3/3.26_DeployStage.png?width=90pc)
 
-### 7. Kiểm tra kết quả
-1. Vào **CloudFormation Console**
-2. Kiểm tra stack được tạo/update
-3. Xác nhận resources được tạo đúng
+### 7. Verify the results
+1. Go to the **CloudFormation Console**
+2. Check that the stack is created/updated
+3. Confirm that resources are created correctly
 
-![Kiểm tra CloudFormation](../../../static/images/3/3.27_CheckCloudFormation.png?width=90pc)
+![Check CloudFormation](../../../static/images/3/3.27_CheckCloudFormation.png?width=90pc)
 
-### 8. Test Pipeline thứ hai
-1. Chọn pipeline `sdlf-workshop-pipelines-pipeline`
-2. Lặp lại các bước 3-7
+### 8. Test the second pipeline
+1. Select the pipeline `sdlf-workshop-pipelines-pipeline`
+2. Repeat steps 3-7
 
-### 9. Test Pipeline thứ ba
-1. Chọn pipeline `sdlf-workshop-teams-pipeline`
-2. Lặp lại các bước 3-7
+### 9. Test the third pipeline
+1. Select the pipeline `sdlf-workshop-teams-pipeline`
+2. Repeat steps 3-7
 
-### 10. Kiểm tra logs và troubleshooting
-1. Nếu pipeline failed, click vào stage để xem logs
-2. Kiểm tra error messages
-3. Sửa lỗi và trigger lại
+### 10. Check logs and troubleshooting
+1. If the pipeline failed, click on the stage to view logs
+2. Check error messages
+3. Fix errors and trigger again
 
 ![Troubleshooting](../../../static/images/3/3.28_Troubleshooting.png?width=90pc)
 
-### 11. Xác minh automation
-1. Push code changes vào repository
-2. Kiểm tra pipeline tự động trigger
-3. Xác nhận end-to-end automation
+### 11. Verify automation
+1. Push code changes to the repository
+2. Check that the pipeline is automatically triggered
+3. Confirm end-to-end automation
 
 {{% notice note %}}
-**Lưu ý**:
-- Pipeline sẽ tự động trigger khi có code changes
-- Kiểm tra CloudWatch logs nếu có lỗi
-- Đảm bảo service roles có đủ quyền
+**Note**:
+- The pipeline will automatically trigger when there are code changes
+- Check CloudWatch logs if there are errors
+- Ensure service roles have sufficient permissions
 {{% /notice %}} 

@@ -8,33 +8,47 @@ pre: "<b>4. </b>"
 
 ## Tổng quan
 
-Trong phần này, chúng ta sẽ đăng ký team và dataset trong SDLF để thiết lập cấu trúc dữ liệu và quyền truy cập.
+Trong phần này, chúng ta sẽ đăng ký team "yelp-recommender" và dataset "yelp-business-data" trong SDLF để thiết lập cấu trúc xử lý dữ liệu Yelp và quyền truy cập cho recommendation system.
 
 [Tài liệu chính thức về SDLF Teams và Datasets](https://github.com/awslabs/aws-serverless-data-lake-framework/tree/master/sdlf-team)
 
 ![Kiến trúc Team và Dataset](../../../static/images/4/0.png?width=40pc)
 
-## Các thành phần chính
+## Các thành phần chính cho Yelp Recommendation System
 
-1. **Team**: Nhóm làm việc với các quyền truy cập cụ thể
-2. **Dataset**: Bộ dữ liệu được quản lý bởi team
-3. **Permissions**: Quyền truy cập vào dữ liệu
-4. **Data Catalog**: Metadata về dữ liệu
+1. **Team "yelp-recommender"**: Nhóm quản lý Yelp dataset và recommendation algorithms
+2. **Datasets**: 
+   - `yelp-business-data`: Business information và attributes
+   - `yelp-review-data`: User reviews và ratings
+   - `yelp-user-data`: User profiles và preferences
+3. **Permissions**: Quyền truy cập cho ETL pipelines và API functions
+4. **Data Catalog**: Metadata về Yelp dataset structure và relationships
+
+## Team Configuration
+
+- **Team Name**: `yelp-recommender`
+- **Datasets**: Multiple Yelp data sources
+- **Access Pattern**: Read/Write for ETL, Read-only cho recommendation APIs
+- **Security**: Row-level security cho sensitive user data
 
 ## Các bước thực hiện
 
-1. [Đăng ký team](1-register-team)
-2. [Tạo dataset](2-create-dataset)
-3. [Thiết lập quyền truy cập](3-configure-permissions)
+1. [Đăng ký team "yelp-recommender"](1-register-team)
+2. [Tạo Yelp datasets](2-create-dataset)
+3. [Thiết lập quyền cho recommendation system](3-configure-permissions)
 
 {{% notice note %}}
-Việc đăng ký team và dataset là bước quan trọng để thiết lập cấu trúc dữ liệu và quyền truy cập trong SDLF.
+Việc đăng ký team và dataset cho Yelp data là bước quan trọng để thiết lập security boundaries và data governance cho recommendation system.
 {{% /notice %}}
 
 {{% notice warning %}}
-Đảm bảo bạn đã hoàn thành phần CI/CD Pipeline trước khi bắt đầu phần này.
+Đảm bảo bạn đã hoàn thành phần CI/CD Pipeline trước khi bắt đầu phần này. Team registration requires pipeline infrastructure.
+{{% /notice %}}
+
+{{% notice tip %}}
+Team và dataset setup không incur additional costs nhưng establish foundation cho data processing charges later.
 {{% /notice %}}
 
 ## Bước tiếp theo
 
-Tiếp theo, chúng ta sẽ [Đăng ký team](1-register-team) để bắt đầu thiết lập cấu trúc dữ liệu.
+Tiếp theo, chúng ta sẽ [Đăng ký team "yelp-recommender"](1-register-team) để bắt đầu thiết lập Yelp data structure.

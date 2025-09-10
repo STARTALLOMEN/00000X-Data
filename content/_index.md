@@ -1,45 +1,50 @@
 ---
-title: "Serverless Data Lake Framework Jump Start"
+title: "Building Location Recommendation System"
 date: 2024-01-01
 weight: 1
 chapter: false
 ---
 
 
-# Serverless Data Lake Framework Jump Start
+# Building Location Recommendation System
 
 #### Overview
 
-This workshop guides learners through implementing AWS serverless services to build a modern data lake architecture on the AWS platform, ensuring scalability and future readiness.
+This workshop guides learners through implementing Serverless Data Lake Framework (SDLF) to build a Location Recommendation System using Yelp Dataset. We will use AWS serverless services to create a powerful recommendation engine platform that is scalable and production-ready.
 
-Serverless Data Lake Framework (SDLF) is a toolkit comprising reusable infrastructure components, designed to accelerate the deployment of enterprise data lake systems on AWS, helping reduce production deployment time from months to just weeks. SDLF adheres to the principles of the AWS Well-Architected Framework and provides many other benefits for businesses, as detailed in the [documentation](https://sdlf.readthedocs.io/en/latest/).
+This system uses Serverless Data Lake Framework (SDLF) - a toolkit comprising reusable infrastructure components, designed to accelerate the deployment of enterprise recommendation systems on AWS. SDLF adheres to the principles of the AWS Well-Architected Framework and provides efficient large-scale Yelp data processing capabilities, as detailed in the [documentation](https://sdlf.readthedocs.io/en/latest/).
 
 ![SDLF Architecture](/images/1/sdlf-layers-architecture.png?width=90pc)
 
-| Layer | Description |
+| Layer | Description for Location Recommendation System |
 | --- | --- |
-| storage | Data lake storage layers with S3 and Lake Formation |
-| catalog | Glue data catalog (databases and crawlers) |
-| processing | Lambda functions and Glue jobs triggered by EventBridge to process data |
-| consumption | Athena workgroups to query and use data |
-| orchestration | Step Functions and EventBridge to orchestrate processing workflows |
-| governance and security | Lake Formation, KMS Keys, and IAM Roles for governance and security |
+| storage | Store Yelp Dataset (business, review, user, tip, checkin) in S3 with Lake Formation |
+| catalog | Glue data catalog managing Yelp data schemas and metadata for recommendation engine |
+| processing | Lambda functions and Glue jobs processing Yelp data, calculating recommendation scores and similarity metrics |
+| consumption | Athena workgroups to query business data and create recommendation APIs |
+| orchestration | Step Functions and EventBridge orchestrating ETL workflows and recommendation pipelines |
+| governance and security | Lake Formation, KMS Keys, and IAM Roles securing Yelp data and API access |
 
 #### Objectives
-Our goal is to illustrate how raw data can be stored, categorized, transformed (using light and/or heavy transformation methods), and consumed by applications and end users.
 
-This workshop uses a dataset downloaded from [here](https://github.com/aws-solutions-library-samples/data-lakes-on-aws/tree/main/sdlf-utils/workshop-examples/legislators/data). The dataset contains JSON-formatted information about US legislators and the positions they have held in the US House of Representatives and Senate, and has been lightly edited and provided in the GitHub repository for the purposes of this workshop.
+The objective of this workshop is to build a Location Recommendation System using Yelp Open Dataset. We will illustrate how Yelp data (businesses, reviews, users, tips, check-ins) can be stored, categorized, transformed, and used to create powerful recommendation APIs for location search and suggestions.
 
-In this workshop, using SDLF, we will standardize and process data using light and heavy transformation methods, and ultimately make the data queryable by end users through Amazon Athena.
+This workshop uses Yelp Open Dataset containing information about over 150,000 businesses, 6.9 million reviews, and 1.9 million users in JSON format. The dataset is downloaded from [Yelp Open Dataset](https://www.yelp.com/dataset) and has been prepared for the purposes of this workshop.
+
+Using SDLF, we will:
+- Process and standardize Yelp data through ETL pipelines
+- Create recommendation algorithms based on rating, location, and user preferences
+- Build APIs for business search and location recommendations
+- Develop analytics dashboard for business intelligence
 
 ## Implementation Steps
-    
+
 1. [Prerequisites](1-prerequisite)
 2. [Deploy SDLF Foundations](2-foundations)
 3. [Set up CI/CD Pipeline](3-cicd-pipeline)
 4. [Register Team and Dataset](4-team-dataset)
-5. [Deploy ETL Pipeline](5-etl-pipeline)
-6. [Ingest and Process Data](6-data-ingestion)
-7. [Query Data with Athena](7-athena-query)
+5. [Deploy ETL Pipeline for Yelp Data](5-etl-pipeline)
+6. [Ingest and Process Yelp Data](6-data-ingestion)
+7. [Build Recommendation APIs with Athena](7-athena-query)
 8. [Monitoring and Troubleshooting](8-monitoring)
 9. [Clean Up Resources](9-cleanup)

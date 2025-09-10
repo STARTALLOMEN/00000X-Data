@@ -1,40 +1,40 @@
 ---
-title: "3.2 Cấu hình CodeBuild Projects"
+title: "Configure CodeBuild Projects"
 date: 2024-01-01
 weight: 2
 chapter: false
 pre: "<b>3.2 </b>"
 ---
 
-## Cấu hình CodeBuild Projects
+## Configure CodeBuild Projects
 
-Trong bước này, bạn sẽ tạo các CodeBuild projects để build và test code từ CodeCommit repositories.
+In this step, you will create CodeBuild projects to build and test code from the CodeCommit repositories.
 
-### 1. Truy cập CodeBuild
-1. Đăng nhập AWS Console
-2. Tìm kiếm **CodeBuild** trong thanh tìm kiếm dịch vụ
+### 1. Access CodeBuild
+1. Log in to the AWS Console
+2. Search for **CodeBuild** in the service search bar
 3. Click **CodeBuild**
 
-![Mở CodeBuild](../../../static/images/3/3.7_OpenCodeBuild.png?width=90pc)
+![Open CodeBuild](../../../static/images/3/3.7_OpenCodeBuild.png?width=90pc)
 
-### 2. Tạo Build Project đầu tiên
+### 2. Create the first Build Project
 1. Click **Create build project**
-2. Nhập **Project name**: `sdlf-workshop-foundations-build`
-3. Nhập **Description**: `Build project for SDLF foundations`
+2. Enter **Project name**: `sdlf-workshop-foundations-build`
+3. Enter **Description**: `Build project for SDLF foundations`
 
-![Tạo build project](../../../static/images/3/3.8_CreateBuildProject.png?width=90pc)
+![Create build project](../../../static/images/3/3.8_CreateBuildProject.png?width=90pc)
 
-### 3. Cấu hình Source
-1. Ở mục **Source**, chọn:
+### 3. Configure Source
+1. In the **Source** section, select:
    - **Source provider**: AWS CodeCommit
    - **Repository**: `sdlf-workshop-foundations`
    - **Branch**: `main`
 2. Click **Next**
 
-![Cấu hình Source](../../../static/images/3/3.9_ConfigureSource.png?width=90pc)
+![Configure Source](../../../static/images/3/3.9_ConfigureSource.png?width=90pc)
 
-### 4. Cấu hình Environment
-1. Ở mục **Environment**:
+### 4. Configure Environment
+1. In the **Environment** section:
    - **Environment image**: Managed image
    - **Operating system**: Ubuntu
    - **Runtime**: Standard
@@ -42,55 +42,55 @@ Trong bước này, bạn sẽ tạo các CodeBuild projects để build và tes
    - **Service role**: Create a service role in your account
 2. Click **Next**
 
-![Cấu hình Environment](../../../static/images/3/3.10_ConfigureEnvironment.png?width=90pc)
+![Configure Environment](../../../static/images/3/3.10_ConfigureEnvironment.png?width=90pc)
 
-### 5. Cấu hình Buildspec
-1. Ở mục **Buildspec**:
-   - Chọn **Use a buildspec file**
+### 5. Configure Buildspec
+1. In the **Buildspec** section:
+   - Select **Use a buildspec file**
    - **Buildspec name**: `buildspec.yml`
 2. Click **Next**
 
-![Cấu hình Buildspec](../../../static/images/3/3.11_ConfigureBuildspec.png?width=90pc)
+![Configure Buildspec](../../../static/images/3/3.11_ConfigureBuildspec.png?width=90pc)
 
-### 6. Cấu hình Artifacts
-1. Ở mục **Artifacts**:
+### 6. Configure Artifacts
+1. In the **Artifacts** section:
    - **Type**: Amazon S3
-   - **Bucket name**: Chọn bucket artifacts từ SDLF foundations
+   - **Bucket name**: Select the artifacts bucket from SDLF foundations
    - **Name**: `foundations-artifacts`
 2. Click **Next**
 
-![Cấu hình Artifacts](../../../static/images/3/3.12_ConfigureArtifacts.png?width=90pc)
+![Configure Artifacts](../../../static/images/3/3.12_ConfigureArtifacts.png?width=90pc)
 
-### 7. Tạo Project
-1. Kiểm tra lại cấu hình
+### 7. Create Project
+1. Review the configuration
 2. Click **Create build project**
 
-### 8. Tạo Build Project thứ hai
-1. Click **Create build project** (lần nữa)
-2. Nhập **Project name**: `sdlf-workshop-pipelines-build`
-3. Lặp lại các bước 3-7 với repository `sdlf-workshop-pipelines`
+### 8. Create the second Build Project
+1. Click **Create build project** again
+2. Enter **Project name**: `sdlf-workshop-pipelines-build`
+3. Repeat steps 3-7 with the repository `sdlf-workshop-pipelines`
 
-### 9. Tạo Build Project thứ ba
+### 9. Create the third Build Project
 1. Click **Create build project**
-2. Nhập **Project name**: `sdlf-workshop-teams-build`
-3. Lặp lại các bước 3-7 với repository `sdlf-workshop-teams`
+2. Enter **Project name**: `sdlf-workshop-teams-build`
+3. Repeat steps 3-7 with the repository `sdlf-workshop-teams`
 
-### 10. Kiểm tra Build Projects
-1. Trong danh sách projects, xác nhận có 3 projects:
+### 10. Verify Build Projects
+1. In the projects list, confirm that there are 3 projects:
    - `sdlf-workshop-foundations-build`
    - `sdlf-workshop-pipelines-build`
    - `sdlf-workshop-teams-build`
 
-![Danh sách Build Projects](../../../static/images/3/3.13_BuildProjectList.png?width=90pc)
+![Build Projects list](../../../static/images/3/3.13_BuildProjectList.png?width=90pc)
 
 ### 11. Test Build Project
-1. Chọn một project
+1. Select a project
 2. Click **Start build**
-3. Kiểm tra build logs để đảm bảo hoạt động đúng
+3. Check the build logs to ensure it works correctly
 
 {{% notice note %}}
-**Lưu ý**:
-- Đảm bảo S3 bucket artifacts có quyền truy cập
-- Service role cần có quyền truy cập S3, CloudWatch Logs
-- Buildspec file sẽ được tạo trong repository
+**Note**:
+- Make sure the S3 artifacts bucket has access permissions
+- The service role needs access to S3 and CloudWatch Logs
+- The buildspec file should be created in the repository
 {{% /notice %}} 
